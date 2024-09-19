@@ -1,0 +1,21 @@
+<p id="success"><%= notice %></p>
+
+<div class="content">
+  <%= render @post %>
+
+</div>
+<br>
+  
+  <div class="actions" style="display: inline-block;">
+ <%= link_to "Edit this post", edit_post_path(@post) %> 
+  </div> |
+  <div class="actions" style="display: inline-block;">
+    <%= link_to "Back to posts", posts_path %>
+  </div>
+<br>
+<br>
+<br>
+<div class="actions">
+  <%= button_to "Destroy this   post", @post, method: :delete %>
+</div>
+

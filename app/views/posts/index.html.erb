@@ -1,0 +1,23 @@
+<p id="success"><%= notice %></p>
+
+<% content_for :title, "Posts" %>
+
+<h1>Posts</h1>
+<div id="posts">
+  <ul>
+    <% @posts.each do |post| %>
+    <li>
+      <%= render post %>
+      <p class="actions">
+        <%= link_to "Show this post", post %>
+      </p>
+    <% end %>
+    </li>
+  </ul>
+</div>
+<br>
+<br>  
+<div class="actions">
+  <%= link_to "New post", new_post_path %>
+
+</div>
